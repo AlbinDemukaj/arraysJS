@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //d1
+        // let groceries=[
+        //     {
+        //         name: 'apple',
+        //         "needed amount":5,
+        //         bought: true
+        //     },
+        //     {
+        //         name: 'banana',
+        //         "needed amount":4,
+        //         bought: false
+        //     },
+        //     {
+        //         name: 'orange',
+        //         "needed amount":3,
+        //         bought: true
+        //     },
+        //     {
+        //         name: 'kiwi',
+        //         "needed amount":2,
+        //         bought: false
+        //     }
+        // ];
+        // //d1.1
+        // // for(let i=0;i<groceries.length;i++){
+        // //     if(groceries[i].bought==false)
+        // //     console.log(groceries[i]);
+            
+        // // }
+        // // for(let i=0;i<groceries.length;i++){
+        // //     if(groceries[i].bought==true)
+        // //     console.log(groceries[i]);
+            
+        // // }
+        // //d1.3
+        // function purchase(product){
+        //     for(let i=0;i<groceries.length;i++){
+        //         if(groceries[i].name==product && groceries[i].bought==false){
+        //             groceries[i].bought=true;
+        //         }
+        //         console.log(groceries[i]);
+        //     }
+            
+        // }
+        // purchase('kiwi');
+       
+
+        // //d2
+        // let shoppingList = [
+        //     {
+        //         name: 'jeans',
+        //         "amount bought": 3,
+        //         price: 50
+        //     },
+        //     {
+        //         name: 'shirts',
+        //         "amount bought": 6,
+        //         price: 40
+        //     },
+        //     {
+        //         name: 'shoes',
+        //         "amount bought": 2,
+        //         price: 200
+        //     }
+        // ];
+        // //d2.1
+        // for(let i=0;i<shoppingList.length;i++){
+        //     console.log(shoppingList[i]);
+        // }
+
+        //d2.2
+        // let sum=0;
+        // for(let i=0;i<shoppingList.length;i++){
+        //     sum=sum+shoppingList[i]["amount bought"]*shoppingList[i].price;
+        // }
+        // console.log(`The total is: ${sum}`);
+
+        // //d2.3
+        // let product="";
+        // let max=shoppingList[0].price;
+        // for(let i=1;i<shoppingList.length;i++){
+        //     if(shoppingList[i].price>max){
+        //     max=shoppingList[i].price;
+        //     product = shoppingList[i].name;}
+        // }
+        // console.log(`The mos expensive items are ${product} and the price is ${max}`);
+
+        //d2.4
+        // let listItems=0;
+        // for(let i =0;i<shoppingList.length;i++){
+        //     listItems=listItems+shoppingList[i]["amount bought"];
+        // }
+        // let average=sum/listItems;
+        // console.log(`An average item price is: ${average}`);
+
+        //d3
+        // let css = [
+        //     {
+        //         "style name": 'color',
+        //         "style value": 'red' 
+        //     },
+        //     {
+        //         "style name": 'font-size',
+        //         "style value": '200' 
+        //     },
+        //     {
+        //         "style name": 'text-alignment',
+        //         "style value": 'center' 
+        //     },
+        // {
+        //         "style name": 'font-style',
+        //         "style value": 'italic' 
+        //     }
+        // ];
+        // function design(arr,text){
+        //     document.write("<p style=",arr[0]["style name"],":",arr[0]["style value"],";",arr[1]["style name"],":",arr[1]["style value"],";",arr[2]["style name"],":",arr[2]["style value"],";",arr[3]["style name"],":",arr[3]["style value"],";"," > ",text,"</p>");
+        // }
+        // let txt ='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.';
+        // design(css,txt);
+
+        // let classroom = [
+        //     {
+        //         name: 'math',
+        //         "number of seats": 15,
+        //         faculty: 'Computer engeneering'
+        //     },
+        //     {
+        //         name: 'english',
+        //         "number of seats": 20,
+        //         faculty: 'Education'
+        //     },
+        //     {
+        //         name: 'object oriented programming',
+        //         "number of seats": 20,
+        //         faculty: 'Computer Science'
+        //     },
+        //     {
+        //         name: 'physics',
+        //         "number of seats": 10,
+        //         faculty: 'Science'
+        //     },
+        //     {
+        //         name: 'biology',
+        //         "number of seats": 18,
+        //         faculty: 'pharmacy'
+        //     },
+        //     {
+        //         name: 'sinjale',
+        //         "number of seats": 2,
+        //         faculty: 'FIEK'
+        //     }
+        // ];
+        //d4.1
+        // function displayClasses(arr){
+        // for(let i=0;i<classroom.length;i++){
+        //     document.write("<p>Class name:",arr[i].name,"   Number of students: ",arr[i]["number of seats"],"   Faculty:",arr[i].faculty,"<br></p>");
+        // }
+        // }
+        // displayClasses(classroom);
+
+        //d4.2
+        // function classes(arr,name){
+        // for(let i=0;i<classroom.length;i++){
+        //     if(arr[i].faculty==name){
+        //     document.write("<p>Class name:",arr[i].name," Number of students: ",arr[i]["number of seats"],"<br></p>");
+        // }
+        // }
+        // }
+        // classes(classroom,"FIEK");
+
+        //d4.4
+        // classroom.sort((a,b)=>{
+        //     return a["number of seats"]-b["number of seats"];
+        // });
+        // console.log(classroom);
+
+        //d4.5
+        // function alphabeticalOrder(arr){
+        //     return arr.sort(function(a,b) {
+        //         return a.name===b.name ? 0 : a.name>b.name ? 1:-1;
+        //     });
+        // }
+        // console.log(alphabeticalOrder(classroom));
+    </script>
+</body>
+</html>
